@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <!-- forms section  -->
+    <div class="container">
+        <header>Student Enrollment Form</header>
+        <form>
+            <div class="student">
+                <span class="title"><b>Student Details</b></span>
+
+                <div class="input-group">
+                    <input type="text" class="input" id="name" name="name" placeholder="Name :- " required>
+
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="course" class="input" placeholder=" Course :- " required>
+
+                </div>
+                <div class="input-group">
+                    <input type="email" class="input" id="email" name="email" placeholder="Email :- " required>
+
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+
+                    <div class="category">
+                        <div class="category1">
+                            <input class="dot one" type="radio" name="gender" value="male" id="dot-1">
+                            <label>Male</label>
+                        </div>
+                        <div class="category1">
+                            <input class="dot two" type="radio" name="gender" value="female" id="dot-2">
+                            <label>Female</label>
+                        </div>
+                        <div class="category1">
+                            <input class="dot two" type="radio" name="gender" value="female" id="dot-3">
+                            <label>Others</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="Skill-details">
+                    <span class="Skill-title">Skills</span>
+                    <div class="Skill-category">
+                        <div class="Skill-category1">
+                            <input type="checkbox" name="skills">
+                            <label>HTML</label>
+                        </div>
+                        <div class="Skill-category1">
+                            <input type="checkbox" name="skills">
+                            <label>CSS</label>
+                        </div>
+                        <div class="Skill-category1">
+                            <input type="checkbox" name="skills">
+                            <label>JAVASCRIPT</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submitBtn">
+                <span class="btnSubmit">Enroll Student</span>
+            </button><br>
+    </div>
+    </form>
+    </div>
+<!-- output as data display on same page -->
+    <div class="output">
+        <h2>ENROLLED STUDENTS </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
